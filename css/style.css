@@ -1,0 +1,107 @@
+* { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+#conteudo{
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#elenco-feminino, #elenco-masculino{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr); 
+
+}
+
+#conteudo img{
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 2em;
+}
+
+#conteudo h4{
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.jogador{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+h1{
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+  #div-detalhes{
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    display: grid;
+}
+
+#div-voltar{
+    margin: 0 auto;
+}
+
+.div-detalhes{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.titulo-detalhes{
+    color: white;
+}
+
+.info-detalhes{
+    line-height: 1.5em;
+}
+
+.imagem-detalhes{
+    border: 2px solid white;
+    border-radius: 2em;
+}
+
+.botao{
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 0.5em;
+    border-radius: 2em;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    #elenco-feminino, #elenco-masculino {
+      grid-template-columns: repeat(4, 1fr);
+    }
+}
+  
+  @media screen and (min-width: 1024px) {
+    #elenco-feminino, #elenco-masculino {
+      grid-template-columns: repeat(6, 1fr);
+    }
+}
