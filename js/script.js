@@ -35,7 +35,5 @@ function salvarInformacoes(indiceJogador) {
     localStorage.setItem('@NomeCompleto', jogador.nome_completo)
     localStorage.setItem('@Nascimento', jogador.nascimento)
     localStorage.setItem('@Altura', jogador.altura);
-
-
     window.location.href = './detalhes.html'
 }
